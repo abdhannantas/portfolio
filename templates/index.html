@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Hannan | Python & Node.js Developer</title>
+    <meta name="description"
+        content="Portfolio of Abdul Hannan, a 16-year-old developer specializing in Discord bots and dedicated servers based in Lahore, Pakistan.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">AH<span>.</span></div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="btn-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="badge">Available for Projects</div>
+                <h1>Hi, I'm <span class="text-gradient">Abdul Hannan</span></h1>
+                <p class="subtitle">A 16-year-old Developer from Lahore, Pakistan. I specialize in building
+                    high-performance <strong>Discord Bots</strong> and managing <strong>Dedicated Servers</strong>.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="https://github.com/abdhannantas/" target="_blank" class="btn-secondary"><i
+                            data-lucide="github"></i> GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2>My Expertise</h2>
+                <p>Building the future with modern technologies.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i data-lucide="code-2"></i>
+                    <h3>Python</h3>
+                    <p>Expert in backend automation, bot development, and Flask/FastAPI.</p>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="terminal"></i>
+                    <h3>Node.js</h3>
+                    <p>Building scalable real-time applications and robust Discord integrations.</p>
+                </div>
+                <div class="skill-card">
+                    <i data-lucide="container"></i>
+                    <h3>Docker</h3>
+                    <p>Containerizing applications for seamless deployment and scaling.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Featured Project</h2>
+                <p>Commercial products and open-source contributions.</p>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="project-tag">Hosting & Infrastructure</span>
+                    <h3>Flux Servers</h3>
+                    <p>A professional hosting company providing high-performance cloud solutions and dedicated server
+                        management.</p>
+                    <div class="project-links">
+                        <a href="https://fluxservers.cloud" target="_blank" class="btn-visit">Visit Website <i
+                                data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-image-placeholder">
+                    <div class="glass-preview">
+                        <div class="browser-dots"><span></span><span></span><span></span></div>
+                        <div class="preview-content">
+                            <img src="https://media.discordapp.net/attachments/1481750146692681798/1502248052428242974/zaUpQwAAAAZJREFUAwBmkUVGRk9OkwAAAABJRU5ErkJggg-removebg-preview.png?ex=6a059c86&is=6a044b06&hm=fd6adc9d2f9e79b45db7d99093d213a63b4b12f8190932050a68de62229388cd&=&format=webp&quality=lossless&width=400&height=400"
+                                alt="Flux Servers Logo" class="project-logo-img">
+                            <p>Flux Servers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-card">
+                <h2>Let's build something <span class="text-gradient">amazing</span></h2>
+                <p>Whether you need a custom bot, server infrastructure, or a collaboration, I'm just an email away.</p>
+                <div class="contact-info">
+                    <a href="mailto:hello@abdulhannan.tech" class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <span>hello@abdulhannan.tech</span>
+                    </a>
+                    <a href="https://www.youtube.com/@5ft3_" target="_blank" class="contact-item">
+                        <i data-lucide="youtube"></i>
+                        <span>YouTube Channel</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Abdul Hannan. Built with <i data-lucide="heart" class="heart-icon"></i>!</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
